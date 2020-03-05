@@ -75,7 +75,8 @@ Ported features are based on [HPM 0.4.5.2]. They are:
     war in the past 5 years are ineligible for dismantlement spoils (in particular: settling for a
     white peace counts as losing a war)
 
-These features also come with bugfixes which have been submitted upstream ([HPM/#39], [HPM/#43]).
+These features also come with bugfixes which have been accepted into later HPM versions ([HPM/#39],
+[HPM/#43]).
 
 [HPM/#39]: https://github.com/arkhometha/Historical-Project-Mod/pull/39
 [HPM/#43]: https://github.com/arkhometha/Historical-Project-Mod/pull/43
