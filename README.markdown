@@ -95,6 +95,11 @@ Some things have not been brought up to speed and may result in new & possibly u
 
 - Colonial countries (e.g. Nigeria, Indonesia) may not civilise on time, or at all.
 
+- Unorganised colonial territories can end up in the hands of a secondary power vassal country that
+  participated in the dismantlement ([HPM/#133]).
+
+  [HPM/#133]: https://github.com/arkhometha/Historical-Project-Mod/issues/133
+
 Release History
 ---------------
 
