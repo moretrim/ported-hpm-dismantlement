@@ -14,9 +14,9 @@ See the features down below.
 Installation
 ------------
 
-Grab the [0.1.0 release].
+Grab the [0.1.1 release].
 
-[0.1.0 release]: https://github.com/moretrim/ported-hpm-dismantlement/releases/tag/v0.1.0
+[0.1.1 release]: https://github.com/moretrim/ported-hpm-dismantlement/releases/tag/v0.1.1
 
 Install this as you would any other mod. When installed properly, the `ported_hpm_dismantlement.mod`
 file and the `ported-hpm-dismantlement` directory should live side-by-side with the respective
@@ -75,8 +75,16 @@ Ported features are based on [HPM 0.4.5.2]. They are:
     war in the past 5 years are ineligible for dismantlement spoils (in particular: settling for a
     white peace counts as losing a war)
 
-These features also come with bugfixes which have been accepted into later HPM versions ([HPM/#39],
-[HPM/#43]).
+These features also come with bugfixes, among which some are pending HFM bugfixes:
+
+- [HFM/#174]
+
+[HFM/#174]: https://github.com/SighPie/HFM/pull/174
+
+
+Some have been accepted into later HPM versions:
+- [HPM/#39]
+- [HPM/#43]
 
 [HPM/#39]: https://github.com/arkhometha/Historical-Project-Mod/pull/39
 [HPM/#43]: https://github.com/arkhometha/Historical-Project-Mod/pull/43
@@ -103,11 +111,17 @@ Some things have not been brought up to speed and may result in new & possibly u
 Release History
 ---------------
 
-### 0.1.0
+### 0.1
 
-[The original release.][v0.1.0]
+The 0.1 series of releases are all save compatible from one version to the next:
 
-[v0.1.0]: https://github.com/moretrim/ported-hpm-dismantlement/tree/v0.1.0
+#### [0.1.1](https://github.com/moretrim/ported-hpm-dismantlement/tree/v0.1.1)
+
+- cherry-pick [HFM/#174]
+
+#### [0.1.0](https://github.com/moretrim/ported-hpm-dismantlement/tree/v0.1.0)
+
+The original release.
 
 Remarks To Mod Makers
 ---------------------
