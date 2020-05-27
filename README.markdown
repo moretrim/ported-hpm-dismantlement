@@ -81,7 +81,6 @@ These features also come with bugfixes, among which some are pending HFM bugfixe
 
 [HFM/#174]: https://github.com/SighPie/HFM/pull/174
 
-
 Some have been accepted into later HPM versions:
 - [HPM/#39]
 - [HPM/#43]
@@ -114,6 +113,12 @@ Release History
 ### 0.1
 
 The 0.1 series of releases are all save compatible from one version to the next:
+
+#### 0.1.2-dev (in development)
+
+- Add missing dismantlement machinery. The missing parts may have been causing dismantlements to
+  take longer than intended, though this should have mostly affected the dismantlement of player
+  countries.
 
 #### [0.1.1](https://github.com/moretrim/ported-hpm-dismantlement/tree/v0.1.1)
 
