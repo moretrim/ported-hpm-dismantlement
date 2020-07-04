@@ -125,6 +125,8 @@ The 0.1 series of releases are all save compatible from one version to the next:
   take longer than intended, though this should have mostly affected the dismantlement of player
   countries.
 
+- Actually include HPM/#39, ensuring Ghana is actually up for grabs during dismantlement. Sorry!
+
 #### [0.1.1](https://github.com/moretrim/ported-hpm-dismantlement/tree/v0.1.1)
 
 - cherry-pick [HFM/#174]
