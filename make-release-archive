@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+project=ported-hpm-dismantlement
+
+function bail {
+    echo >&2 "$@"
+    exit 1
+}
+
+function usage {
+    bail "\
+Usage: $0 tag
+Creates a project archive ready for release.
+  • tag looks like e.g. “1.0”
+  • tags that contain ‘prerelease’ will result in a final file name with semver-style build metadata information"
+}
+
+if [[ $# -lt 1 || "$1" == --help ]]; then
+    usage
+fi
+
+tag="$1"
+
+mkdir -p releases || bail "Could not figure out ‘releases’ output directory."
+
+if [[ ! -d "$project" ]]; then
+    bail "Could not understand project structure: ‘$project’ not found."
+fi
+
+modfile="${project//-/_}.mod"
+if [[ ! -r "$modfile" ]]; then
+    bail "Could not find mod file ‘$modfile’"
+fi
+
+if [[ "$tag" =~ prerelease ]]; then
+    semver="$tag.$(date +'%G%m%d')"
+else
+    semver="$tag"
+fi
+
+output="$project-$semver.zip"
+
+zip -r "$output" "$project" "$modfile" && mv "$output" releases/
