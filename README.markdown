@@ -4,15 +4,20 @@ Ported HPM Dismantlement
 Description
 -----------
 
-This is a Victoria 2 submod meant to be overlaid on top of HFM. It is unlikely to work well or at
+This is a Victoria 2 submod meant to be overlaid on top of [HFM]. It is unlikely to work well or at
 all with other mods based on HFM as the functionality provided by this submod requires modifying
 some fairly important files.
 
 Due to the latter reason this submod also incorporates the option to disable colonial railroading.
 See the features down below.
 
+[HFM]: https://github.com/SighPie/HFM
+
 Installation
 ------------
+
+Since this is a submod, you need the [Historical Flavour Mod][HFM] installed already. Follow
+instructions there to install it if you haven’t already.
 
 Grab the [0.1.1 release].
 
