@@ -3,16 +3,17 @@
 project=ported-hpm-dismantlement
 
 function bail {
-    echo >&2 "$@"
+    echo >&2 "$0: $@"
     exit 1
 }
 
 function usage {
-    bail "\
+    echo >&2 "\
 Usage: $0 tag
 Creates a project archive ready for release.
-  • tag looks like e.g. “1.0”
-  • tags that contain ‘prerelease’ will result in a final file name with semver-style build metadata information"
+  • tag looks like e.g. “1.0” or “1.0-prerelease”
+  • a tag that contains ‘prerelease’ will result in a final filename with semver-style build metadata information"
+  exit 1
 }
 
 if [[ $# -lt 1 || "$1" == --help ]]; then
@@ -21,15 +22,15 @@ fi
 
 tag="$1"
 
-mkdir -p releases || bail "Could not figure out ‘releases’ output directory."
+mkdir -p releases || bail "could not figure out ‘releases’ output directory."
 
 if [[ ! -d "$project" ]]; then
-    bail "Could not understand project structure: ‘$project’ not found."
+    bail "could not understand project structure: ‘$project’ not found."
 fi
 
-modfile="${project//-/_}.mod"
+modfile="${project//-/_}".mod
 if [[ ! -r "$modfile" ]]; then
-    bail "Could not find mod file ‘$modfile’"
+    bail "could not find mod file ‘$modfile’"
 fi
 
 if [[ "$tag" =~ prerelease ]]; then
@@ -38,6 +39,6 @@ else
     semver="$tag"
 fi
 
-output="$project-$semver.zip"
+output="releases/$project-$semver.zip"
 
-zip -r "$output" "$project" "$modfile" && mv "$output" releases/
+zip -r --filesync "$output" "$project" "$modfile" || bail "could not prepare archive"
