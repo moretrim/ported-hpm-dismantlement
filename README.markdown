@@ -119,6 +119,10 @@ Release History
 
 The last release (explanation TBD). Not save compatible with the 0.1.x series.
 
+To make the ported dismantlement system more robust, this release incorporates by necessity some
+fairly core HFM files. This means it might be harder to make it cooperate with HFM offshoots which
+contain their own modifications to those same files.
+
 #### 1.0.0-dev (in development)
 
 ##### New Feature
@@ -145,6 +149,11 @@ The last release (explanation TBD). Not save compatible with the 0.1.x series.
 - Cherry-pick the `LUN`/`LUA` core removal fix from upstream HPM. This fix has also been expanded to
   all outstanding `LUN` (Lunda) & `LUA` (Luang Prabang) mix-ups. This ensures the correct removal of
   Lunda cores when organising the Congo and Zambia.
+
+- Spoils-of-dismantlement countries will no longer have access to the fast-forward Westernisation
+  decision provided by HFM past 1905. This prevents e.g. a British-released India from Westernising
+  in the time it takes before being handed over to its new colonial masters, which would
+  subsequently receive all regions as states instead of colonies.
 
 ### 0.1
 
