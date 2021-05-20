@@ -5408,6 +5408,7 @@ political_decisions = {
 				remove_core = TOU
 				remove_core = MAS
 				remove_core = MOS
+				remove_core = KNG
 			}
 			
 			BKF = {

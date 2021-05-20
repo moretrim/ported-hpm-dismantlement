@@ -1906,6 +1906,7 @@ political_decisions = {
 									is_core = TOU
 									is_core = MAS
 									is_core = MOS
+									is_core = KNG
 								}
 							}
 							
@@ -2308,12 +2309,14 @@ political_decisions = {
 							is_core = TOU
 							is_core = MAS
 							is_core = MOS
+							is_core = KNG
 						}
 					}
 					remove_core = SEG
 					remove_core = TOU
 					remove_core = MAS
 					remove_core = MOS
+					remove_core = KNG
 				}
 			}
 			

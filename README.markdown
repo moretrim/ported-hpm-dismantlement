@@ -155,6 +155,8 @@ contain their own modifications to those same files.
   in the time it takes before being handed over to its new colonial masters, which would
   subsequently receive all regions as states instead of colonies.
 
+- Correct late removal of stray Wattara cores after organisation of Burkina-Faso.
+
 ### 0.1
 
 The 0.1 series of releases are all save compatible from one version to the next:
