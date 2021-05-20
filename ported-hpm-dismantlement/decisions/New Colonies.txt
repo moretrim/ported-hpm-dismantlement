@@ -2480,7 +2480,7 @@ political_decisions = {
 					}
 				}
 				remove_core = CGO
-				remove_core = LUA
+				remove_core = LUN
 				remove_core = LOA
 				remove_core = AZA
 				remove_core = KZB
@@ -2604,7 +2604,7 @@ political_decisions = {
 				}
 				add_core = CNG
 				remove_core = CGO
-				remove_core = LUA
+				remove_core = LUN
 				remove_core = LOA
 				remove_core = AZA
 				remove_core = KZB
@@ -2724,7 +2724,7 @@ political_decisions = {
 			any_owned = {
 				limit = { is_core = ZAM }
 				remove_core = KZB
-				remove_core = LUA
+				remove_core = LUN
 			}
 			any_owned = {
 				limit = {
@@ -2839,7 +2839,7 @@ political_decisions = {
 				}
 				add_core = ZAM
 				remove_core = KZB
-				remove_core = LUA
+				remove_core = LUN
 			}
 			random_owned = {
 				limit = { province_id = 2015 owner = { primary_culture = british } }

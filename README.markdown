@@ -115,17 +115,25 @@ Some things have not been brought up to speed and may result in new & possibly u
 Release History
 ---------------
 
-### 0.1
+### 1.0
 
-The 0.1 series of releases are all save compatible from one version to the next:
+The last release (explanation TBD). Not save compatible with the 0.1.x series.
 
-#### 0.1.2-dev (in development)
+#### 1.0.0-dev (in development)
 
 - Add missing dismantlement machinery. The missing parts may have been causing dismantlements to
   take longer than intended, though this should have mostly affected the dismantlement of player
   countries.
 
 - Actually include HPM/#39, ensuring Ghana is actually up for grabs during dismantlement. Sorry!
+
+- Cherry-pick the `LUN`/`LUA` core removal fix from upstream HPM. This fix has also been expanded to
+  all outstanding `LUN` (Lunda) & `LUA` (Luang Prabang) mix-ups. This ensures the correct removal of
+  Lunda cores when organising the Congo and Zambia.
+
+### 0.1
+
+The 0.1 series of releases are all save compatible from one version to the next:
 
 #### [0.1.1](https://github.com/moretrim/ported-hpm-dismantlement/tree/v0.1.1)
 
