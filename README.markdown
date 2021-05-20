@@ -121,6 +121,21 @@ The last release (explanation TBD). Not save compatible with the 0.1.x series.
 
 #### 1.0.0-dev (in development)
 
+##### New Feature
+
+- Port the starting year for unlocking Great Wars from HPM: 1890 (same as unmodded), instead of 1900
+  in HFM. The starting year for World Wars is still 1905, unchanged from both HPM and HFM.
+
+  This is not technically part of the dismantlement system, which only allows use of the CB after
+  discovering Mass Politics no earlier than 1900 anyway. However the ten-year lag found in HFM was
+  being felt acutely when it comes to the power dynamics of the second half of a full campaign.
+
+  Moving up the earliest unlock date makes room for about one extra (dismantlement-less) Great War.
+  This can allow a crafty diplomat to set the stage for momentous dismantlements later down the
+  line, but requires either skill or luck.
+
+##### Fixes
+
 - Add missing dismantlement machinery. The missing parts may have been causing dismantlements to
   take longer than intended, though this should have mostly affected the dismantlement of player
   countries.
