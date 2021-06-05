@@ -35,8 +35,7 @@ political_decisions = {
 			NOT = { has_country_flag = clean_up_unciv_monarchy }
 			NOT = { has_country_flag = clean_up_colonial_government }
 			# HPM 0.4.5.2 port: dismantlement
-			NOT = { has_country_modifier = considering_colonial_offer }
-			NOT = { has_country_modifier = negotiating_treaty }
+			NOT = { has_country_modifier = colony_to_be_annexed }
 		}
 		
 		allow = {
@@ -391,8 +390,7 @@ political_decisions = {
 				}
 			}
 			# HPM 0.4.5.2 port: dismantlement
-			NOT = { has_country_modifier = considering_colonial_offer }
-			NOT = { has_country_modifier = negotiating_treaty }
+			NOT = { has_country_modifier = colony_to_be_annexed }
 		}
 		
 		allow = {

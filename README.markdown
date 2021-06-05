@@ -1,8 +1,21 @@
 Ported HPM Dismantlement
-========================
+------------------------
 
-Description
------------
+Due to the amount of modifications required this submod will no longer be supported. The last
+release has not been properly tested either. Instead, our efforts have been directed to:
+
+# [Community Curated HFM][ccHFM]
+
+[ccHFM]: https://github.com/moretrim/ccHFM
+
+ccHFM is an unauthorised, unaffiliated effort to maintain the Historical Flavour Mod. If you came to
+this submod because you wanted HFM with an improved dismantlement system (which itself requires
+porting or otherwise improving supporting systems) then please consider our mod instead. While
+ccHFM incorporates more than just changes to dismantlement, it does so with a purpose to **preserve
+the HFM experience**.
+
+Original description
+--------------------
 
 This is a Victoria 2 submod meant to be overlaid on top of [HFM]. It is unlikely to work well or at
 all with other mods based on HFM as the functionality provided by this submod requires modifying
@@ -19,9 +32,9 @@ Installation
 Since this is a submod, you need the [Historical Flavour Mod][HFM] installed already. Follow
 instructions there to install it if you haven’t already.
 
-Grab the [0.1.1 release].
+Grab the [latest stable release][releases].
 
-[0.1.1 release]: https://github.com/moretrim/ported-hpm-dismantlement/releases/tag/v0.1.1
+[releases]: https://github.com/moretrim/ported-hpm-dismantlement/releases/
 
 Install this as you would any other mod. When installed properly, the `ported_hpm_dismantlement.mod`
 file and the `ported-hpm-dismantlement` directory should live side-by-side with the respective
@@ -29,7 +42,12 @@ file and the `ported-hpm-dismantlement` directory should live side-by-side with 
 
 In the Victoria 2 launcher you should see an entry for the submod:
 
+<figure>
+
 ![launcher](./launcher.jpg)
+
+<figcaption>Example launcher entry for the older 0.1.0 release</figcaption>
+</figure>
 
 The `50: ` prefix should ensure that the submod appears *before* the underlying mod. If it doesn't
 the submod is unlikely to work at all. (For advanced use, this prefix can be modified to tweak load
@@ -117,13 +135,14 @@ Release History
 
 ### 1.0
 
-The last release (explanation TBD). Not save compatible with the 0.1.x series.
+The last release ([see explanation](#ported-hpm-dismantlement)). Largely untested. Not save
+compatible with the 0.1.x series.
 
 To make the ported dismantlement system more robust, this release incorporates by necessity some
 fairly core HFM files. This means it might be harder to make it cooperate with HFM offshoots which
 contain their own modifications to those same files.
 
-#### 1.0.0-dev (in development)
+#### 1.0.0
 
 ##### New Feature
 
@@ -144,7 +163,7 @@ contain their own modifications to those same files.
   take longer than intended, though this should have mostly affected the dismantlement of player
   countries.
 
-- Actually include HPM/#39, ensuring Ghana is actually up for grabs during dismantlement. Sorry!
+- Actually include [HPM/#39], ensuring Ghana is actually up for grabs during dismantlement. Sorry!
 
 - Cherry-pick the `LUN`/`LUA` core removal fix from upstream HPM. This fix has also been expanded to
   all outstanding `LUN` (Lunda) & `LUA` (Luang Prabang) mix-ups. This ensures the correct removal of
@@ -153,9 +172,26 @@ contain their own modifications to those same files.
 - Spoils-of-dismantlement countries will no longer have access to the fast-forward Westernisation
   decision provided by HFM past 1905. This prevents e.g. a British-released India from Westernising
   in the time it takes before being handed over to its new colonial masters, which would
-  subsequently receive all regions as states instead of colonies.
+  subsequently receive all regions as states instead of colonies. (**Known bug:** does not quite
+  work for Indian countries still.)
 
 - Correct late removal of stray Wattara cores after organisation of Burkina-Faso.
+
+- Correct merge errors: colonial RGO decisions of Kyrgyzstan, Tajikistan, and Rwanda-Burundi;
+  *Colonial Legacy* decision.
+
+- Cherry-pick fix for mojibake in German Namibia decision.
+
+- Port part of [HPM/7aab423e]:
+  > * Fixed NNM event 96065 that could give a dismantle nation CB on a nation you have a truce
+  >   with.
+
+  [HPM/7aab423e]: https://github.com/arkhometha/Historical-Project-Mod/commit/7aab423e9f38d9d5f8d5a957a83532d866d473d2
+
+- Exclude spoils-of-dismantlement countries from these events:
+  * *Revolution in the Congo*: caused the Congo to revolt and break away from the dismantled
+    overlord
+  * *Hegemony over the Nile*: caused the master of Egypt to inherit Sudanese provinces
 
 ### 0.1
 

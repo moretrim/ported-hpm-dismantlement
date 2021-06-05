@@ -414,6 +414,7 @@ country_event = {
 					AND = {
 						truce_with = THIS
 						has_country_modifier = dismantling_country
+						NOT = { has_country_flag = not_want_colonies }
 					}
 					AND = {
 						THIS = { has_country_modifier = international_pariah }
@@ -437,6 +438,7 @@ country_event = {
 					AND = {
 						truce_with = THIS
 						has_country_modifier = dismantling_country
+						NOT = { has_country_flag = not_want_colonies }
 					}
 					AND = {
 						THIS = { has_country_modifier = international_pariah }
@@ -460,6 +462,7 @@ country_event = {
 					AND = {
 						truce_with = THIS
 						has_country_modifier = dismantling_country
+						NOT = { has_country_flag = not_want_colonies }
 					}
 					AND = {
 						THIS = { has_country_modifier = international_pariah }

@@ -912,7 +912,7 @@ country_event = {
 		}
 		NOT = { has_country_flag = no_russian_doctrine }
 		# HPM 0.4.5.2 port: dismantlement
-		NOT = { has_country_modifier = considering_colonial_offer }
+		NOT = { has_country_modifier = colony_to_be_annexed }
 	}
 	
 	mean_time_to_happen = {

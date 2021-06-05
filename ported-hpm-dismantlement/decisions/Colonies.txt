@@ -242,10 +242,9 @@ political_decisions = {
 		effect = {
 			set_global_flag = kyrgyzstan_commodities
 			treasury = -50000
-			##Kyrgz
-			1207 = { trade_goods = coal }
-			1189 = { trade_goods = coal } #Bishkek
+			1203 = { trade_goods = coal }
 			1190 = { trade_goods = cotton }
+			1189 = { trade_goods = coal } #Bishkek
 		}
 		ai_will_do = {  factor = 1 }
 	}
@@ -315,8 +314,8 @@ political_decisions = {
 		effect = {
 			set_global_flag = tajikstan_commodities
 			treasury = -50000
-			1201 = { trade_goods = coal } #Shurab mine
-			1208 = { trade_goods = precious_metal }
+			1208 = { trade_goods = cotton }
+			1201 = { trade_goods = precious_metal }
 		}
 		ai_will_do = {  factor = 1 }
 	}
@@ -351,6 +350,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = philippines_commodities
 			treasury = -50000
+			2565 = { trade_goods = tobacco }
 			1457 = { trade_goods = coffee }
 			1458 = { trade_goods = coffee }
 		}
@@ -602,7 +602,7 @@ political_decisions = {
 		picture = tea_production
 		
 		potential = {
-			AND = {
+			OR = {
 				owns = 2034
 				owns = 2035
 			}
@@ -926,6 +926,7 @@ political_decisions = {
 		effect = {
 			civilized = yes
 			clr_country_flag = lacking_writing_system
+			remove_country_modifier = lacks_writing_system
 			random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
 			random_owned = { 
 				limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
@@ -3840,5 +3841,4 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-
 }
